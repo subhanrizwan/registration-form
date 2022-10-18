@@ -1,3 +1,7 @@
+
+
+var arr = []
+
 function validation(){
     event.preventDefault();
 
@@ -66,28 +70,124 @@ function validation(){
     }else{alert("last namne is required")}
     }else{alert("first name is required")}
 
-    
-    var prints=[
-        {
-        name1:name1.value,
+     
+    prints= {
+    name1:name1.value,
         f_name:f_name.value,
         email1:email1.value,
         p_num:p_num.value,
         cnic:cnic.value,
-        gend_f:gend_f.value,
-        gend_m:gend_m.value,
         course:course.value,
-        city:city.value
-        
-    }
+        city:city.value,
+       };
+       arr.push(prints)
     
-    ]
-localStorage.setItem("fulldata",JSON.stringify(prints[0]))
-// console.log(fulldata);
+    
+       localStorage.setItem("fulldata",JSON.stringify(arr))
+       
+    }
+    console.log(arr);
 
-// console.log(prints[0].email1.value)
-console.log(prints);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ibad
+
+// var dob = document.getElementById('DOB')
+// var gend_f = document.getElementById('femalegender')
+// var gend_m = document.getElementById('maleGender')
+// var course = document.getElementById('select-course')
+// var city = document.getElementById('select-city')
+// var name1 = document.getElementById('name');
+// var f_name = document.getElementById('father_name');
+// var email1 = document.getElementById('email');
+// var p_num = document.getElementById('number');
+// var count = 0;
+// var obj;
+
+// function validation() {
+//     event.preventDefault()
+
+//     var item_check = localStorage.getItem("data");
+//     if (item_check === null) {
+//         obj = {};
+//     }
+//     else {
+//         obj = JSON.parse(localStorage.getItem("data"));
+//     }
+//     obj[`id${count}`] = {
+//         name: name1.value,
+//         father_name: f_name.value,
+//         email: email1.value,
+//         phone_num: p_num.value,
+//         cnic: cnic.value,
+//         course: course.value,
+//         city: city.value
+//     }
+//     localStorage.setItem("data", JSON.stringify(obj))
+//     count++;
+//     console.log(count);
+// }
+
+
+// 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
